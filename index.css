@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    max-width: 1550px;
+    padding: 15px;
+    margin: 0px auto;
+}
+
+/* Info Paragraph under slider */
+
+#india-info {
+    width: 91%;
+    margin: 40px auto 0px;
+    font-size: 23px;
+    line-height: 1.72;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+#india-info #show {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+#india-info #secondPara {
+    display: none;
+    transition: 2s;
+}
+
+
+#popularIndia {
+    margin: 20px auto;
+    align-items: center;
+}
+
+#popularIndia .heading-1 {
+    text-align: center;
+    color: darkblue;
+    line-height: 1.1;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+
+#cards {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+#cards .innercard {
+    width: 720px;
+    height: 300px;
+    background-color: powderblue;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#cards .innercard .info{
+    width: 470px;
+    padding: 20px 10px;
+    text-align: justify;
+}
+#cards .innercard .info button{
+    background-color: inherit;
+    border: none;
+    color: darkblue;
+    text-decoration: underline;
+}
+#cards .innercard img{
+    width: 250px;
+    height: inherit;
+}
