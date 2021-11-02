@@ -21,7 +21,6 @@
     color: #5a5a5a;
     text-align: center;
 }
-
 #india-info #show {
     background-color: white;
     border: none;
@@ -30,20 +29,17 @@
     color: blue;
     text-decoration: underline;
     cursor: pointer;
-
 }
-
 #india-info #secondPara {
     display: none;
     transition: 2s;
 }
 
-
+/* Popular in India */
 #popularIndia {
     margin: 20px auto;
     align-items: center;
 }
-
 #popularIndia .heading-1 {
     text-align: center;
     color: darkblue;
@@ -51,8 +47,6 @@
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
 }
-
-
 #cards {
     background-color: #fff;
     display: flex;
@@ -61,7 +55,6 @@
     flex-wrap: wrap;
     border: 2px solid black;
 }
-
 #cards .innercard {
     width: 720px;
     height: 300px;
@@ -70,7 +63,6 @@
     display: flex;
     flex-direction: row;
 }
-
 #cards .innercard .info{
     width: 470px;
     padding: 20px 10px;
@@ -85,4 +77,42 @@
 #cards .innercard img{
     width: 250px;
     height: inherit;
+}
+
+@media (max-width:1550px) {
+
+    /* Popular in India */
+    #cards .innercard {
+        width: 600px;
+        height: 300px;
+    }
+    #cards .innercard .info{
+        width: 400px;
+    }
+    #cards .innercard img{
+        width: 200px;
+    }   
+}
+
+@media (max-width:1310px) {
+
+    /* Popular in India */
+    #cards .innercard {
+        width: 600px;
+        height: 300px;
+    }
+    #cards .innercard .info{
+        width: 100%;
+        padding: 20px 10px;
+        text-align: justify;
+    }
+    #cards .innercard .info p{
+        font-size: 20px;
+    }
+    #cards .innercard .info button{
+        font-size: 25px;
+    }
+    #cards .innercard img{
+        display: none;
+    }     
 }
