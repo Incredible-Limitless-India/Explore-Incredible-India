@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Carousel.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 1330px;
+            padding: 15px;
+            margin: 0px auto;
+        }
+
+        #Banner {
+            height: 680px;
+            width: 100%;
+            margin-top: 75px;
+            background-image: url(./Assests/wildlife-santuries-India.jpg);
+            display: flex;
+            font-size: 40px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 50px;
+        }
+
+        #container>h1 {
+            text-align: center;
+        }
+
+        #container>p {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <a href="#" class="logo">Explore Incredible India!!</a>
+
+            <ul class="navigation">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="#">Explore</a>
+                    <ul class="submenu1">
+                        <li><a href="#">North-India</a></li>
+                        <li><a href="#">South-India</a></li>
+                        <li><a href="#">East-India</a></li>
+                        <li><a href="#">West-India</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+
+
+        </header>
+
+        <!-- Banner -->
+        <div id="Banner">
+        </div>
+
+        <!-- Paragraph -->
+        <p><i> India is home to a large variety of wildlife. It is a biodiversity hotspot with its various ecosystems ranging from the
+        Himalayas in the north to the evergreen rain forests in the south, the sands of the west to the marshy mangroves of the
+        east. India lies within the Indomalayan realm and is the home to about 7.6% of mammal, 14.7% of amphibian, 6% of bird,
+        6.2% of reptilian, and 6.0% of flowering plant species. India's forest lands nurture about 500 species of mammals and
+        2000+ bird species.
+        <br>
+        <br>
+       Wildlife sanctuaries of India are classified as IUCN Category IV protected areas. As of December 2020, 553 wildlife
+            sanctuaries were established in India, covering 119,776 km2 (46,246 sq mi).Among these, Project Tiger governs 51
+            tiger reserves, which are of special significance for the conservation of the Bengal tiger. The oldest bird sanctuary is
+            Vedanthangal Bird Sanctuary near Chennai in Tamil Nadu state, and was established in 1796</i>
+    </p>
+
+        <!-- Heading -->
+        <h1>Animals Native to Indian Sub-Continent</h1>
+
+
+        
+            <!-- Carousel -->
+            <div id="Carouselslider">
+                <div id="slider-container">
+                    <span onclick="slideRight()" class="btn"></span>
+                    <div id="slider">
+                        <div class="slide">
+                            <img src="./Assests/Animals/Asian-Elephant-495x330.jpg" alt="">
+                            <h3>Asian Elephants</h3>
+                            <p>India is home to more than 50 percent of Asian Elephants.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Indian-Bison-440x330.jpg" alt="">
+                            <h3>Indian Bison</h3>
+                            <p>Having a giant head and a huge deep body, this big animal showcases strength and energy..</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Black-Buck-496x330.jpg" alt="">
+                            <h3>Black Buck</h3>
+                            <p>With spiral horns and charming colour, this animal is considered as an innocent and gullible species.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Snow-Leopard-e1552306552594-431x330.jpg" alt="">
+                            <h3>Snow Leopard</h3>
+                            <p>With long and thick fur, and brown yellowish to smoky grey skin, it is one of the most exotic species
+                                found in
+                                Himalayan regions .</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Asiatic-Lion-e1552306533848-442x330.jpg" alt="">
+                            <h3>Asiatic Lion</h3>
+                            <p>It is the second largest cat species in the world that can only be seen in India.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Greater-One-horned-Rhinoceros-495x330.jpg" alt="">
+                            <h3>Greater One-horned Rhinoceros</h3>
+                            <p>It is a large animal that can be found particularly in Kaziranga National Park and Dudhwa Tiger
+                                Reserve</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Nilgiri-Tahr-495x330.jpg" alt="">
+                            <h3>Nilgiri Tahr</h3>
+                            <p>Having curved horns, a gluey coat and coarse fur, Nilgiri Tahr is found in the western parts of
+                                India.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Lion-tailed-Macaque-e1552306584550-398x330.jpg" alt="">
+                            <h3>Lion-tailed Macaque</h3>
+                            <p>Found in the Western Ghats of South India, the Lion-tailed Macaque attracts people with its
+                                incomparable appearance.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Red-Panda-495x330.jpg" alt="">
+                            <h3>Red Panda</h3>
+                            <p>Also known as red-cat bear, this animal can be seen in the forests of Arunachal Pradesh and Sikkim.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Animals/Kashmir-Red-Stag-Hangul-495x330.jpg" alt="">
+                            <h3>Kashmir Red Stag</h3>
+                            <p>This species of deer can be seen in the state of Jammu and Kashmir
+                                particularly in the areas of Overa-Aru</p>
+                        </div>
+                    </div>
+                    <span onclick="slideLeft()" class="btn"></span>
+                </div>
+            </div>
+            <script src="./Carousel.js"></script>
+            </div>
+            <!-- Heading -->
+            <h1 style="text-align: center;">Famous Wildife Sanctuaries in India</h1>
+
+            <!-- Carousel -->
+            <div id="Carouselslider">
+                <div id="slider-container">
+                    <span onclick="slideRight()" class="btn"></span>
+                    <div id="slider">
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/corbett-national-park-in-uttarakhand-556x330.jpg" alt="">
+                            <h3>Corbett National Park in Uttarakhand</h3>
+                            <p>India is home to more than 50 percent of Asian Elephants.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/periyar-wildlife-sanctuary-in-kerala-495x330.jpg" alt="">
+                            <h3>Periyar Wildlife Sanctuary in Kerala</h3>
+                            <p>Having a giant head and a huge deep body, this big animal showcases strength and energy..</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/sunderbans-1-509x330.jpg" alt="">
+                            <h3>Sundarbans National Park in West Bengal</h3>
+                            <p>With spiral horns and charming colour, this animal is considered as an innocent and gullible species.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/kaziranga-national-park-in-assam-495x330.jpg" alt="">
+                            <h3>Kaziranga National Park in Assam</h3>
+                            <p>With long and thick fur, and brown yellowish to smoky grey skin, it is one of the most exotic species
+                                found in
+                                Himalayan regions .</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/ranthambore-national-park-in-rajasthan-495x330.jpg" alt="">
+                            <h3>Ranthambore National Park in Rajasthan</h3>
+                            <p>It is the second largest cat species in the world that can only be seen in India.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/kanha-national-park-in-madhya-pradesh-495x330.jpg" alt="">
+                            <h3>Kanha National Park in Madhya Pradesh</h3>
+                            <p>It is a large animal that can be found particularly in Kaziranga National Park and Dudhwa Tiger
+                                Reserve</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/kanha-national-park-in-madhya-pradesh-495x330.jpg" alt="">
+                            <h3>Bandipur National Park in Karnataka</h3>
+                            <p>Having curved horns, a gluey coat and coarse fur, Nilgiri Tahr is found in the western parts of
+                                India.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/bandhavgarh-national-park-in-madhya-pradesh-495x330.jpg" alt="">
+                            <h3>Bandhavgarh National Park in Madhya Pradesh</h3>
+                            <p>Found in the Western Ghats of South India, the Lion-tailed Macaque attracts people with its
+                                incomparable appearance.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/sariska-national-park-rajasthan-495x330.jpg" alt="">
+                            <h3>Sariska National Park, Rajasthan</h3>
+                            <p>Also known as red-cat bear, this animal can be seen in the forests of Arunachal Pradesh and Sikkim.
+                            </p>
+                        </div>
+                        <div class="slide">
+                            <img src="./Assests/Wildlife sanctuaries/Govind-Wildlife-Sanctuary_0.jpg" alt="">
+                            <h3>Govind Wildlife Sanctuary in Uttarakhand</h3>
+                            <p>This species of deer can be seen in the state of Jammu and Kashmir
+                                particularly in the areas of Overa-Aru</p>
+                        </div>
+                    </div>
+                    <span onclick="slideLeft()" class="btn"></span>
+                </div>
+            </div>
+            <script src="./Carousel.js"></script>
+            </div>
+
+    <!-- Footer -->
+    <footer>
+        <section id="info">
+            <section id="about">
+                <h2>State Tourism Websites</h2>
+                <section id="stateWebsites" style="display: flex; flex-direction: row; border: 2px solid white;">
+                    <section id="about1" style="width: 32%; border: 2px solid red; height: 100%;">
+                        <ul>
+                            <li><a href="http://www.uptourism.gov.in/">Arunachal Pradesh</a></li>
+                            <li><a href="http://www.uptourism.gov.in/">UP</a></li>
+                            <li><a href="http://www.uptourism.gov.in/">UP</a></li>
+                            <li><a href="http://www.uptourism.gov.in/">UP</a></li>
+                            <li><a href="http://www.uptourism.gov.in/">UP</a></li>
+                        </ul>
+                    </section>
+                    <section id="about1" style="width: 32%; border: 2px solid red; height: 100%;"></section>
+                    <section id="about1" style="width: 32%; border: 2px solid red; height: 100%;"></section>
+                </section>
+            </section>
+            <seciton class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li>C</li>
+                    <li>UI Design</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>Android</li>
+                    <li>Hybrid Apps</li>
+                </ul>
+            </seciton>
+
+            <section class="quicklinks">
+                <h2>Quick links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Contribute</li>
+                    <li>Privacy Policy</li>
+                    <li>Sitemap</li>
+                    <li>Disclaimer</li>
+                </ul>
+
+            </section>
+
+            <section class="contact">
+                <h2>CONTACT US</h2>
+                <ul>
+                    <li><span>SCO-75, Chandigarh, India</span></li>
+                    <li><span>betalabsindia@gmail.com</span></li>
+                    <li></i><span>9729280731</span></li>
+                    <li></i><span>betalabsindia</span></li>
+                </ul>
+            </section>
+        </section>
+        <hr width="100%" noshade="">
+        <section class="social">
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="copyright">
+            <p>
+                Copyright &copy; 2020 All Rights Reserved by
+                <a href="https://www.beta-labs.in">Beta-Labs.</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
