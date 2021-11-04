@@ -6,9 +6,8 @@
 
 #container {
     width: 100%;
-    max-width: 1550px;
-    padding: 15px;
-    margin: 0px auto;
+    max-width: 1350px;
+    margin: 15px auto;
 }
 /* HEADERS */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
