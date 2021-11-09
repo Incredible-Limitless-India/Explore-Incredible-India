@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Incredible India | Forts and Palaces</title>
+    <style>
+        #container {
+            max-width: 1350px;
+            margin: 10px auto;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .beaches-banner h2 {
+            width: 100%;
+            height: 600px;
+            background-image: url(./fort_and_palaces/city_palace.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 58px;
+            color: white;
+        }
+
+        .beaches-breadcrumbs {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .beaches-breadcrumbs ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+
+        }
+
+        .beaches-breadcrumbs li {
+            float: left;
+            margin: 5px;
+        }
+
+        .beaches-breadcrumbs li a {
+            display: block;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+
+
+        /* Info */
+
+        .beaches-info {
+            width: 92%;
+            margin: 30px auto 0px;
+            font-size: 20px;
+            line-height: 1.79;
+            color: #5a5a5a;
+            text-align: center;
+        }
+
+
+        .beaches-popular .mustvisit {
+            width: 90%;
+            height: 360px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 11px;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info {
+            width: 51%;
+            padding: 20px 10px;
+            text-align: justify;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #aaaaaa;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info p {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 44px;
+            text-align: left;
+            line-height: 1.52;
+            color: #5a5a5a;
+        }
+
+        .beaches-popular .mustvisit img {
+            width: 50%;
+            border-radius: 10px;
+            height: 350px;
+            margin: auto;
+            position: relative;
+            right: 25px;
+        }
+
+        @media (max-width:920px) {
+            .beaches-popular .mustvisit {
+                width: 91%;
+                height: 700px;
+                flex-direction: column;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info {
+                width: 100%;
+                height: 265px;
+                border-radius: 5px;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info p {
+                font-size: 20px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: center;
+            }
+
+            .beaches-popular .mustvisit-next {
+                flex-direction: column-reverse;
+            }
+
+            .beaches-popular .mustvisit img {
+                width: 100%;
+                height: 400px;
+                right: 0px;
+                margin-top: 0px;
+                border-radius: 5px;
+            }
+        }
+
+        @media (max-width:540px) {
+            .beaches-popular .mustvisit {
+                width: 91%;
+                height: 700px;
+                flex-direction: column;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info {
+                width: 100%;
+                height: 290px;
+                border-radius: 5px;
+            }
+        }
+
+
+        /* Carousel */
+
+        #Carouselslider {
+            height: 406px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: white;
+            display: grid;
+            place-items: center
+        }
+
+        #slider-container {
+            height: 400px;
+            width: 85vw;
+            max-width: 1400px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        #slider-container .btn {
+            position: absolute;
+            top: calc(50% - 30px);
+            height: 30px;
+            width: 30px;
+            border-left: 8px solid #90A4AE;
+            border-top: 8px solid #B0BEC5;
+        }
+
+        #slider-container .btn:hover {
+            transform: scale(1.2);
+        }
+
+        #slider-container .btn.inactive {
+            border-color: rgb(153, 121, 126)
+        }
+
+        #slider-container .btn:first-of-type {
+            transform: rotate(-45deg);
+            left: 10px
+        }
+
+        #slider-container .btn:last-of-type {
+            transform: rotate(135deg);
+            right: 10px;
+        }
+
+        #slider-container #slider {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        #slider-container #slider .slide {
+            height: 345px;
+            margin: 10px 22px;
+            box-shadow: 2px 2px 4px 2px lightgrey, 0px 0px 4px 2px lightgrey;
+            display: grid;
+            border-radius: 10px;
+        }
+
+
+        #slider-container #slider .slide span {
+            color: white;
+            font-size: 150px;
+        }
+
+        #slider-container .slide img {
+            width: 280px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        #slider-container .slide h3 {
+            text-align: center;
+            margin: 0px;
+            font-size: 25px;
+        }
+
+        #slider-container .slide p {
+            text-align: center;
+            margin: 0px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            padding: 10px;
+        }
+
+        @media only screen and (min-width: 1100px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 550px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="beaches-banner">
+            <h2>Fort and Palaces</h2>
+        </div>
+
+        <nav class="beaches-breadcrumbs">
+            <ol>
+                <li><a href="#">Home / </a></li>
+                <li><a style="color: blue;" href=""> Popular In India / </a></li>
+                <li><a style="color: #8b8b8b;" href="#">Fort and Palacess</a></li>
+            </ol>
+        </nav>
+
+
+        <section class="beaches-info">
+            <p>
+                India is blessed with heritage riches and a regal lineage. Vestiges of Indian royalty can be felt in the
+                various forts and palaces speckled across the country. From hill forts in Rajasthan to formidable
+                fortifications in Gwalior, Golconda and Delhi, the history of India stands tall and proud, housed inside
+                these marvellous structures. To experience how the royalty lived in the past, several of these
+                palace-turned heritage hotels are a must-visit.</p>
+
+            <p>Visiting these forts and palaces is the best way to uncover a real treasure of Indian history. These
+                serve as great reminders of the bygone eras, mystical kingdoms and their rulers. </p>
+        </section>
+
+
+        <section class="beaches-popular">
+            <h2 style="text-align: center; font-size: 40px; font-family: 'Raleway', sans-serif;">Popular Forts And
+                Palaces In India</h2>
+            <div class="mustvisit">
+                <div class="mustvisit-info">
+                    <h1>Agra Fort</h1>
+                    <p>Built by Mughal emperor Akbar in 1565 AD, Agra Fort is a majestic sandstone built as an ode to
+                        the magnificence of the Mughal empire. Encompassing within its 2.5-km-long enclosure walls a
+                        stunning imperial city, the fortress is shaped like a crescent, its eastern wall flanked by
+                        River Yamuna.
+                    </p>
+                </div>
+                <img src="./fort_and_palaces/Agra Fort.jpg" alt="">
+            </div>
+        </section>
+
+
+
+        <!--  Carousel -->
+
+        <div id="Carouselslider">
+            <div id="slider-container">
+                <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                    <div class="slide">
+                        <img src="./fort_and_palaces/Amber Fort.jpg" alt="">
+                        <h3>Amber Fort</h3>
+                        <p>Just 11 km outside Jaipur, lies the magnificent Amber Fort (Amer Fort), sitting atop a hill,
+                            and rising like a sentinel guarding the city</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./fort_and_palaces/city palace jaipur.jpg" alt="">
+                        <h3>City Palace</h3>
+                        <p>Located in the heart of old Jaipur, the City Palace is a spectacular example of the
+                            amalgamation of Rajput and Mughal architecture. </p>
+                    </div>
+                    <div class="slide">
+                        <img src="./fort_and_palaces/city palace.jpg" alt="">
+                        <h3>City Palace</h3>
+                        <p>Rising from the bank of Lake Pichola, the imposing City Palace is a grand icon of Udaipur's
+                            and Rajasthan's royal past.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./fort_and_palaces/jaisalmer fort.jpg" alt="">
+                        <h3>Jaisalmer Fort</h3>
+                        <p>The piece de resistance of the lively Thar desert is a magnificent structure built from
+                            yellow sandstone, called the Jaisalmer Fort.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./fort_and_palaces/kumbhalgarh fort.jpg" alt="">
+                        <h3>Kumbhalgarh Fort</h3>
+                        <p>The impregnable Kumbhalgarh Fort, sitting on a high mountain ridge seems like an impression
+                            from the past. Soaring above the surrounding rugged mountainscape, at 3,600 ft,</p>
+                    </div>
+                </div>
+                <span onclick="slideLeft()" class="btn"></span>
+            </div>
+        </div>
+
+        <script src="./Carousel.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>

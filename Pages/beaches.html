@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Incredible India | Beaches</title>
+    <style>
+        #container {
+            max-width: 1350px;
+            margin: 10px auto;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .beaches-banner h2 {
+            width: 100%;
+            height: 600px;
+            background-image: url(./beaches/banner_beach.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 66px;
+            color: white;
+            word-spacing: 1;
+        }
+
+        .beaches-breadcrumbs {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .beaches-breadcrumbs ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+
+        }
+
+        .beaches-breadcrumbs li {
+            float: left;
+            margin: 5px;
+        }
+
+        .beaches-breadcrumbs li a {
+            display: block;
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+
+
+        /* Info */
+
+        .beaches-info {
+            width: 92%;
+            margin: 30px auto 0px;
+            font-size: 20px;
+            line-height: 1.79;
+            color: #5a5a5a;
+            text-align: center;
+        }
+
+
+        .beaches-popular .mustvisit {
+            width: 90%;
+            height: 360px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 11px;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info {
+            width: 51%;
+            padding: 20px 10px;
+            text-align: justify;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #aaaaaa;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .beaches-popular .mustvisit .mustvisit-info p {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 44px;
+            text-align: left;
+            line-height: 1.32;
+            color: #5a5a5a;
+        }
+
+        .beaches-popular .mustvisit img {
+            width: 50%;
+            border-radius: 10px;
+            height: 350px;
+            margin: auto;
+            position: relative;
+            right: 25px;
+        }
+
+        @media (max-width:920px) {
+            .beaches-popular .mustvisit {
+                width: 91%;
+                height: 700px;
+                flex-direction: column;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info {
+                width: 100%;
+                height: 265px;
+                border-radius: 5px;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info p {
+                font-size: 20px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: center;
+            }
+
+            .beaches-popular .mustvisit-next {
+                flex-direction: column-reverse;
+            }
+
+            .beaches-popular .mustvisit img {
+                width: 100%;
+                height: 400px;
+                right: 0px;
+                margin-top: 0px;
+                border-radius: 5px;
+            }
+        }
+
+        @media (max-width:540px) {
+            .beaches-popular .mustvisit {
+                width: 91%;
+                height: 700px;
+                flex-direction: column;
+            }
+
+            .beaches-popular .mustvisit .mustvisit-info {
+                width: 100%;
+                height: 290px;
+                border-radius: 5px;
+            }
+        }
+
+
+        /* Carousel */
+
+        #Carouselslider {
+            height: 406px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: white;
+            display: grid;
+            place-items: center
+        }
+
+        #slider-container {
+            height: 400px;
+            width: 85vw;
+            max-width: 1400px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        #slider-container .btn {
+            position: absolute;
+            top: calc(50% - 30px);
+            height: 30px;
+            width: 30px;
+            border-left: 8px solid #90A4AE;
+            border-top: 8px solid #B0BEC5;
+        }
+
+        #slider-container .btn:hover {
+            transform: scale(1.2);
+        }
+
+        #slider-container .btn.inactive {
+            border-color: rgb(153, 121, 126)
+        }
+
+        #slider-container .btn:first-of-type {
+            transform: rotate(-45deg);
+            left: 10px
+        }
+
+        #slider-container .btn:last-of-type {
+            transform: rotate(135deg);
+            right: 10px;
+        }
+
+        #slider-container #slider {
+            display: flex;
+            width: 1000%;
+            height: 100%;
+            transition: all .5s;
+        }
+
+        #slider-container #slider .slide {
+            height: 345px;
+            margin: 10px 22px;
+            box-shadow: 2px 2px 4px 2px lightgrey, 0px 0px 4px 2px lightgrey;
+            display: grid;
+            border-radius: 10px;
+        }
+
+
+        #slider-container #slider .slide span {
+            color: white;
+            font-size: 150px;
+        }
+
+        #slider-container .slide img {
+            width: 280px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        #slider-container .slide h3 {
+            text-align: center;
+            margin: 0px;
+            font-size: 25px;
+        }
+
+        #slider-container .slide p {
+            text-align: center;
+            margin: 0px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            padding: 10px;
+        }
+
+        @media only screen and (min-width: 1100px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+
+        @media only screen and (max-width: 550px) {
+
+            #slider-container #slider .slide {
+                width: 280px;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="beaches-banner">
+            <h2>Beaches</h2>
+        </div>
+
+        <nav class="beaches-breadcrumbs">
+            <ol>
+                <li><a href="#">Home / </a></li>
+                <li><a style="color: blue;" href=""> Popular In India / </a></li>
+                <li><a style="color: #8b8b8b;" href="#">Beaches</a></li>
+            </ol>
+        </nav>
+
+
+        <section class="beaches-info">
+            <p>
+                India's shorelines are endowed with a glorious beauty that is reflected in its undulating golden beaches
+                that make for an ideal vantage point to watch the sun dipping into the sea. Beaches stroke both the
+                eastern and western coasts of the Indian peninsula. They also act as sentinels of the rich cultural
+                heritage of India and host many temples, memorials and monuments. Several beaches in the country are
+                sites of adventure sports like skiing, scuba diving, parasailing and windsurfing. India's coastal line
+                lures many migratory birds and aquatic life to come and nestle on the sun-kissed shores. </p>
+        </section>
+
+
+        <section class="beaches-popular">
+            <h2 style="text-align: center; font-size: 40px; font-family: 'Raleway', sans-serif;">Popular Beaches in
+                India</h2>
+            <div class="mustvisit">
+                <div class="mustvisit-info">
+                    <h1>Kovalam Beach</h1>
+                    <p>Since as early as the 1930s, Kovalam Beach has been an internationally famous stopover for
+                        tourists. There are three crescent-shaped beaches with a rock wall that make Kovalam one of the
+                        best spots in the country for sea swimming. You can also go on a catamaran cruise or sunbathes.
+                    </p>
+                </div>
+                <img src="./beaches/Kovalam-cover.jpg" alt="">
+            </div>
+        </section>
+
+
+
+        <!--  Carousel -->
+
+        <div id="Carouselslider">
+            <div id="slider-container">
+                <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                    <div class="slide">
+                        <img src="./beaches/Colva Beach.jpg" alt="">
+                        <h3>Colva Beach</h3>
+                        <p>Colva Beach is one of the most popular beaches in the state and is located in South Goa.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./beaches/vagator Beach.jpg" alt="">
+                        <h3>Vagator Beach</h3>
+                        <p>Among Goa's most photographed beaches, Vagator Beach is situated on the Caisua Bay along
+                            River Chapora.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./beaches/Anjuna Beach.jpg" alt="">
+                        <h3>Anjuna Beach</h3>
+                        <p>Renowned for its serene vistas of swaying palms, golden sand and the unusual rock formations,
+                            Anjuna Beach is located about 18 km away from Panaji.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./beaches/Calangute Beach.jpg" alt="">
+                        <h3>Calangute Beach</h3>
+                        <p>Fondly called the queen of beaches by locals, Calangute Beach is among the most popular
+                            beaches in Goa, attracting large crowds throughout the year.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="./beaches/Palolem Beach.jpg" alt="">
+                        <h3>Palolem Beach</h3>
+                        <p>Palolem is arguably Goa's most picturesque beach. It's a mile-long, semi-circle shaped beach
+                            enclosed by a thick forest of coconut palms.</p>
+                    </div>
+                </div>
+                <span onclick="slideLeft()" class="btn"></span>
+            </div>
+        </div>
+
+        <script src="./Carousel.js"></script>
+
+
+    </div>
+
+</body>
+
+</html>
