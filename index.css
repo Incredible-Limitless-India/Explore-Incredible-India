@@ -329,14 +329,14 @@ nav .logo.space {
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
 }
-#cards {
+#popularIndia #cards {
     background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#cards .innercard {
+#popularIndia #cards .innercard {
     width: 720px;
     height: 300px;
     background-color: powderblue;
@@ -344,18 +344,18 @@ nav .logo.space {
     display: flex;
     flex-direction: row;
 }
-#cards .innercard .info{
+#popularIndia #cards .innercard .info{
     width: 470px;
     padding: 20px 10px;
     text-align: justify;
 }
-#cards .innercard .info button{
+#popularIndia #cards .innercard .info button{
     background-color: inherit;
     border: none;
     color: darkblue;
     text-decoration: underline;
 }
-#cards .innercard img{
+#popularIndia #cards .innercard img{
     width: 250px;
     height: inherit;
 }
