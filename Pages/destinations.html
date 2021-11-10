@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <title>Explore Incredible India | Destinations</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container {
-        width: 100%;
-        max-width: 1550px;
-        margin: 0px auto;
-      }
 
-      .centerimage {
-        width: 80%;
-        margin-left: 12%;
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 300px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/footer.css">
+  <title>Explore Incredible India | Destinations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1550px;
+      margin: 0px auto;
+    }
+
+    .centerimage {
+      width: 80%;
+      margin-left: 12%;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 300px;
+    }
+
+    .mustvisit,
+    .mustvisit-next {
+      width: 91%;
+      height: 400px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 2px 5px 5px 5px grey;
+    }
+
+    .mustvisit .mustvisit-info,
+    .mustvisit-next .mustvisit-info {
+      width: 70%;
+      padding: 20px 10px;
+      text-align: justify;
+      box-sizing: border-box;
+    }
+
+    .mustvisit .mustvisit-info img,
+    .mustvisit-next .mustvisit-info img {
+      width: 23%;
+      height: 210px;
+      margin-top: 50px;
+    }
+
+    .mustvisit img,
+    .mustvisit-next img {
+      width: 30%;
+      height: 380px;
+      margin: 10px 5px;
+    }
+
+    .mustvisit-next .mustvisit-info a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .mustvisit .mustvisit-info a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .mustvisit-next .mustvisit-info a:hover {
+      color: #991a8e;
+      font-size: 18px;
+    }
+
+    .mustvisit .mustvisit-info a:hover {
+      color: #991a8e;
+      font-size: 18px;
+    }
+
+    @media (max-width: 700px) {
 
       .mustvisit,
       .mustvisit-next {
         width: 91%;
-        height: 400px;
-        margin: 40px auto;
-        display: flex;
-        flex-direction: row;
-        box-shadow: 2px 5px 5px 5px grey;
+        height: 600px;
+        flex-direction: column;
       }
 
       .mustvisit .mustvisit-info,
       .mustvisit-next .mustvisit-info {
-        width: 70%;
-        padding: 20px 10px;
-        text-align: justify;
-        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
       }
 
-      .mustvisit .mustvisit-info img,
-      .mustvisit-next .mustvisit-info img {
-        width: 23%;
-        height: 210px;
-        margin-top: 50px;
+      .mustvisit-next {
+        flex-direction: column-reverse;
       }
 
       .mustvisit img,
       .mustvisit-next img {
-        width: 30%;
-        height: 380px;
-        margin: 10px 5px;
+        width: 100%;
+        height: 400px;
       }
-      .mustvisit-next .mustvisit-info a {
-        text-decoration: none;
-        color: black;
-      }
-      .mustvisit .mustvisit-info a {
-        text-decoration: none;
-        color: black;
-      }
-      .mustvisit-next .mustvisit-info a:hover {
-        color: #991a8e;
-        font-size: 18px;
-      }
-      .mustvisit .mustvisit-info a:hover {
-        color: #991a8e;
-        font-size: 18px;
-      }
+    }
+  </style>
+</head>
 
-      @media (max-width: 700px) {
-        .mustvisit,
-        .mustvisit-next {
-          width: 91%;
-          height: 600px;
-          flex-direction: column;
-        }
-        .mustvisit .mustvisit-info,
-        .mustvisit-next .mustvisit-info {
-          width: 100%;
-          height: 200px;
-        }
-        .mustvisit-next {
-          flex-direction: column-reverse;
-        }
-        .mustvisit img,
-        .mustvisit-next img {
-          width: 100%;
-          height: 400px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <h2
-        style="
+<body>
+  <div class="container">
+    <h2 style="
           text-align: center;
           font-size: 45px;
           margin-bottom: 40px;
@@ -109,386 +119,454 @@
           text-decoration: underline;
           font-family: 'Times New Roman', Times, serif;
           font-weight: 400;
-        "
-      >
-        Must Visit Destinations
-      </h2>
+        ">
+      Must Visit Destinations
+    </h2>
 
-      <!-- RIGHT IMAGE -->
+    <!-- RIGHT IMAGE -->
 
-      <div class="mustvisit">
-        <div class="mustvisit-info">
-          <a href="../Pages/Destinations/spiti.html">
-            <h1
-              style="
+    <div class="mustvisit">
+      <div class="mustvisit-info">
+        <a href="../Pages/Destinations/spiti.html">
+          <h1 style="
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: underline;
                 text-underline-offset: 4px;
                 font-weight: 300;
-              "
-            >
-              Spiti Valley
-            </h1></a
-          >
-          <p
-            style="
+              ">
+            Spiti Valley
+          </h1>
+        </a>
+        <p style="
               font-size: 18px;
               margin: 5px;
               font-family: Arial, Helvetica, sans-serif;
               margin-top: 20px;
-            "
-          >
-            Spiti valley is famous for its natural beauty and cultural heritage.
-            Tabo monastery is one of the most prominent attractions in Spiti.
-          </p>
-          <img src="../assests/Destinations/spiti1.webp" alt="" />
-          <img src="../assests/Destinations/spiti2.jpg" alt="" />
-          <img src="../assests/Destinations/spiti3.jpg" alt="" />
-          <img src="../assests/Destinations/spiti4.jpg" alt="" />
-        </div>
-
-        <img src="../assests/Destinations/spiti0.jpg" alt="" />
+            ">
+          Spiti valley is famous for its natural beauty and cultural heritage.
+          Tabo monastery is one of the most prominent attractions in Spiti.
+        </p>
+        <img src="../assests/Destinations/spiti1.webp" alt="" />
+        <img src="../assests/Destinations/spiti2.jpg" alt="" />
+        <img src="../assests/Destinations/spiti3.jpg" alt="" />
+        <img src="../assests/Destinations/spiti4.jpg" alt="" />
       </div>
 
-      <br />
+      <img src="../assests/Destinations/spiti0.jpg" alt="" />
+    </div>
 
-      <!-- iska class name isleye change hai kyuki jab 700px ke baad responsive hogi tho iski bhi image upar wale ki tarah niche aae  info section ke -->
-      <!-- isleye media query me isko maine column-reverse kar diya hai -->
+    <br />
 
-      <!-- aur agar image upar laani ho aur image niche tho column-reverse isme se hatake upar wali class me lga dena -->
+    <!-- iska class name isleye change hai kyuki jab 700px ke baad responsive hogi tho iski bhi image upar wale ki tarah niche aae  info section ke -->
+    <!-- isleye media query me isko maine column-reverse kar diya hai -->
 
-      <!-- LEFT IMAGE -->
+    <!-- aur agar image upar laani ho aur image niche tho column-reverse isme se hatake upar wali class me lga dena -->
 
-      <div class="mustvisit-next">
-        <img src="../assests/Destinations/delhi0.jpg" alt="" />
-        <div class="mustvisit-info">
-          <a href="delhi.html">
-            <h1
-              style="
+    <!-- LEFT IMAGE -->
+
+    <div class="mustvisit-next">
+      <img src="../assests/Destinations/delhi0.jpg" alt="" />
+      <div class="mustvisit-info">
+        <a href="delhi.html">
+          <h1 style="
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: underline;
                 text-underline-offset: 4px;
                 font-weight: 300;
-              "
-            >
-              Delhi
-            </h1></a
-          >
-          <p
-            style="
+              ">
+            Delhi
+          </h1>
+        </a>
+        <p style="
               font-size: 18px;
               margin: 5px;
               font-family: Arial, Helvetica, sans-serif;
               margin-top: 20px;
-            "
-          >
-            One of the most beautiful cities in India, Delhi offers a mix of
-            history that feels alive in Old Delhi. As the capital of the Mughal
-            empire, the city has some of the world's most awe-inspiring forts
-            and structures.
-          </p>
-          <img src="../assests/Destinations/delhi1.jpeg" alt="" />
-          <img src="../assests/Destinations/delhi2.jpg" alt="" />
-          <img src="../assests/Destinations/delhi3.jpg" alt="" />
-          <img src="../assests/Destinations/delhi4.jpg" alt="" />
-        </div>
-      </div>
-
-      <br />
-
-      <!-- RIGHT IMAGE -->
-
-      <div class="mustvisit">
-        <div class="mustvisit-info">
-          <a href="./Destinations/agra.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Agra
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            Agra is a city on the banks of Yamuna river in Uttar Pradesh.
-            Popular as the city of Taj Mahal, Agra has more to offer than just
-            the wonderful Taj. It is home to 3 UNESCO World Heritage Sites.
-          </p>
-          <img src="../assests/Destinations/agra1.jfif" alt="" />
-          <img src="../assests/Destinations/agra2.jpg" alt="" />
-          <img src="../assests/Destinations/agra3.jfif" alt="" />
-          <img src="../assests/Destinations/agra4.jfif" alt="" />
-        </div>
-
-        <img src="../assests/Destinations/taj-mahal.jpeg" alt="" />
-      </div>
-
-      <br />
-
-      <div class="mustvisit-next">
-        <img src="../assests/Destinations/jaipur0.jpg" alt="" />
-        <div class="mustvisit-info">
-          <a href="./Destinations/jaipur.html"
-            ><h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Jaipur
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            Jaipur is famous as Pink City of India and it is also the Capital
-            City of Rajasthan. Jaipur is famous for Rajasthani traditional
-            Jewelry, traditional fabrics and handicrafts, and also for
-            traditional rajasthani cuisine.
-          </p>
-          <img src="../assests/Destinations/jaipur1.jfif" alt="" />
-          <img src="../assests/Destinations/jaipur2.jpg" alt="" />
-          <img src="../assests/Destinations/jaipur3.jfif" alt="" />
-          <img src="../assests/Destinations/jaipur4.jfif" alt="" />
-        </div>
-      </div>
-
-      <br />
-
-      <div class="mustvisit">
-        <div class="mustvisit-info">
-          <a href="./Destinations/mumbai.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Mumbai
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            Mumbai is India's biggest and most populous city. Apart from being
-            the country's financial capital, Mumbai has earned several other
-            titles like 'the land of dreams' and the city that never sleeps.
-          </p>
-          <img src="../assests/Destinations/mumbai1.jfif" alt="" />
-          <img src="../assests/Destinations/mumbai2.webp" alt="" />
-          <img src="../assests/Destinations/mumbai3.jpg" alt="" />
-          <img src="../assests/Destinations/mumbai4.jpg" alt="" />
-        </div>
-
-        <img src="../assests/Destinations/mumbai0.webp" alt="" />
-      </div>
-
-      <br />
-      <div class="mustvisit-next">
-        <img src="../assests/Destinations/Hyderabadlogo.png" alt="" />
-        <div class="mustvisit-info">
-          <a href="./Destinations/hyderabad.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Hyderabad
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 8px;
-            "
-          >
-            A vibrant city with the imposing Charminar at its heart, Hyderabad,
-            the capital of Telangana, is a potpourri of history, cuisine and
-            eclectic experiences. While its Old City area is an impressive
-            heritage haven with iconic monuments.
-          </p>
-          <img src="../assests/Destinations/hyderbad1.jpg" alt="" />
-          <img src="../assests/Destinations/hydrbad2.jpg" alt="" />
-          <img src="../assests/Destinations/hyderabad3.jpg" alt="" />
-          <img src="../assests/Destinations/hydebad4.jpg" alt="" />
-        </div>
-      </div>
-
-      <br />
-
-      <!-- RIGHT IMAGE -->
-
-      <div class="mustvisit">
-        <div class="mustvisit-info">
-          <a href="./Destinations/kolkata.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Kolkata
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            Almost like a colonial matriarch nurturing her heritage roots, the
-            city of Kolkata, the capital of West Bengal, holds culture and
-            tradition close to its heart.
-          </p>
-          <img src="../assests/Destinations/kolkata1.jpg" alt="" />
-          <img src="../assests/Destinations/kolkata2.jpg" alt="" />
-          <img src="../assests/Destinations/kolkata3.jpg" alt="" />
-          <img src="../assests/Destinations/kolkata4.png" alt="" />
-        </div>
-        <img src="../assests/Destinations/kolkatalogo.jpg" alt="" />
-      </div>
-
-      <br />
-      <!-- LEFT -->
-      <div class="mustvisit-next">
-        <img src="../assests/Destinations/chennailogo.jpg" alt="" />
-        <div class="mustvisit-info">
-          <a href="./Destinations/chennai.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Chennai
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            Ancient temples, vibrant arts, natural wonders and a bustling
-            culinary scene make Chennai, the capital of Tamil Nadu, one of the
-            most popular tourist destinations in the southern fringes of the
-            country.
-          </p>
-          <img src="../assests/Destinations/chennai1.jpg" alt="" />
-          <img src="../assests/Destinations/chennai2.jpg" alt="" />
-          <img src="../assests/Destinations/chennai3.jpg" alt="" />
-          <img src="../assests/Destinations/chennai4.jpg" alt="" />
-        </div>
-      </div>
-
-      <br />
-      <!-- RIGHT -->
-      <div class="mustvisit">
-        <div class="mustvisit-info">
-          <a href="./Destinations/varanasi.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Varanasi
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 20px;
-            "
-          >
-            One of the oldest living inhabitations of the world, the sacred city
-            of Varanasi or Benaras, nestled on the banks of the holy Ganges
-            river, has been attracting pilgrims for centuries.
-          </p>
-          <img src="../assests/Destinations/varanasi1.jpg" alt="" />
-          <img src="../assests/Destinations/varanasi2.jpg" alt="" />
-          <img src="../assests/Destinations/varanasi3.jpg" alt="" />
-          <img src="../assests/Destinations/varanasi4.jpg" alt="" />
-        </div>
-        <img src="../assests/Destinations/varanasilogo.jpg" alt="" />
-      </div>
-      <br />
-
-      <div class="mustvisit-next">
-        <img src="../assests/Destinations/BengaluruLogo.jpg" alt="" />
-        <div class="mustvisit-info">
-          <a href="./Destinations/bengaluru.html">
-            <h1
-              style="
-                font-family: Arial, Helvetica, sans-serif;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                font-weight: 300;
-              "
-            >
-              Bengaluru
-            </h1></a
-          >
-          <p
-            style="
-              font-size: 18px;
-              margin: 5px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin-top: 8px;
-            "
-          >
-            A city catering to almost all the creature comforts of a
-            metropolitan, a pleasant year-round weather and a bustling shopping
-            and culinary scene, Bengaluru, the capital of Karnataka, is the
-            perfect destination to mix work with pleasure.
-          </p>
-          <img src="../assests/Destinations/banglore1.jpg" alt="" />
-          <img src="../assests/Destinations/banglore2.jpg" alt="" />
-          <img src="../assests/Destinations/banglore3.jfif" alt="" />
-          <img src="../assests/Destinations/banglore4.jfif" alt="" />
-        </div>
+            ">
+          One of the most beautiful cities in India, Delhi offers a mix of
+          history that feels alive in Old Delhi. As the capital of the Mughal
+          empire, the city has some of the world's most awe-inspiring forts
+          and structures.
+        </p>
+        <img src="../assests/Destinations/delhi1.jpeg" alt="" />
+        <img src="../assests/Destinations/delhi2.jpg" alt="" />
+        <img src="../assests/Destinations/delhi3.jpg" alt="" />
+        <img src="../assests/Destinations/delhi4.jpg" alt="" />
       </div>
     </div>
-  </body>
+
+    <br />
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="mustvisit">
+      <div class="mustvisit-info">
+        <a href="./Destinations/agra.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Agra
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          Agra is a city on the banks of Yamuna river in Uttar Pradesh.
+          Popular as the city of Taj Mahal, Agra has more to offer than just
+          the wonderful Taj. It is home to 3 UNESCO World Heritage Sites.
+        </p>
+        <img src="../assests/Destinations/agra1.jfif" alt="" />
+        <img src="../assests/Destinations/agra2.jpg" alt="" />
+        <img src="../assests/Destinations/agra3.jfif" alt="" />
+        <img src="../assests/Destinations/agra4.jfif" alt="" />
+      </div>
+
+      <img src="../assests/Destinations/taj-mahal.jpeg" alt="" />
+    </div>
+
+    <br />
+
+    <div class="mustvisit-next">
+      <img src="../assests/Destinations/jaipur0.jpg" alt="" />
+      <div class="mustvisit-info">
+        <a href="./Destinations/jaipur.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Jaipur
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          Jaipur is famous as Pink City of India and it is also the Capital
+          City of Rajasthan. Jaipur is famous for Rajasthani traditional
+          Jewelry, traditional fabrics and handicrafts, and also for
+          traditional rajasthani cuisine.
+        </p>
+        <img src="../assests/Destinations/jaipur1.jfif" alt="" />
+        <img src="../assests/Destinations/jaipur2.jpg" alt="" />
+        <img src="../assests/Destinations/jaipur3.jfif" alt="" />
+        <img src="../assests/Destinations/jaipur4.jfif" alt="" />
+      </div>
+    </div>
+
+    <br />
+
+    <div class="mustvisit">
+      <div class="mustvisit-info">
+        <a href="./Destinations/mumbai.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Mumbai
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          Mumbai is India's biggest and most populous city. Apart from being
+          the country's financial capital, Mumbai has earned several other
+          titles like 'the land of dreams' and the city that never sleeps.
+        </p>
+        <img src="../assests/Destinations/mumbai1.jfif" alt="" />
+        <img src="../assests/Destinations/mumbai2.webp" alt="" />
+        <img src="../assests/Destinations/mumbai3.jpg" alt="" />
+        <img src="../assests/Destinations/mumbai4.jpg" alt="" />
+      </div>
+
+      <img src="../assests/Destinations/mumbai0.webp" alt="" />
+    </div>
+
+    <br />
+    <div class="mustvisit-next">
+      <img src="../assests/Destinations/Hyderabadlogo.png" alt="" />
+      <div class="mustvisit-info">
+        <a href="./Destinations/hyderabad.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Hyderabad
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 8px;
+            ">
+          A vibrant city with the imposing Charminar at its heart, Hyderabad,
+          the capital of Telangana, is a potpourri of history, cuisine and
+          eclectic experiences. While its Old City area is an impressive
+          heritage haven with iconic monuments.
+        </p>
+        <img src="../assests/Destinations/hyderbad1.jpg" alt="" />
+        <img src="../assests/Destinations/hydrbad2.jpg" alt="" />
+        <img src="../assests/Destinations/hyderabad3.jpg" alt="" />
+        <img src="../assests/Destinations/hydebad4.jpg" alt="" />
+      </div>
+    </div>
+
+    <br />
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="mustvisit">
+      <div class="mustvisit-info">
+        <a href="./Destinations/kolkata.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Kolkata
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          Almost like a colonial matriarch nurturing her heritage roots, the
+          city of Kolkata, the capital of West Bengal, holds culture and
+          tradition close to its heart.
+        </p>
+        <img src="../assests/Destinations/kolkata1.jpg" alt="" />
+        <img src="../assests/Destinations/kolkata2.jpg" alt="" />
+        <img src="../assests/Destinations/kolkata3.jpg" alt="" />
+        <img src="../assests/Destinations/kolkata4.png" alt="" />
+      </div>
+      <img src="../assests/Destinations/kolkatalogo.jpg" alt="" />
+    </div>
+
+    <br />
+    <!-- LEFT -->
+    <div class="mustvisit-next">
+      <img src="../assests/Destinations/chennailogo.jpg" alt="" />
+      <div class="mustvisit-info">
+        <a href="./Destinations/chennai.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Chennai
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          Ancient temples, vibrant arts, natural wonders and a bustling
+          culinary scene make Chennai, the capital of Tamil Nadu, one of the
+          most popular tourist destinations in the southern fringes of the
+          country.
+        </p>
+        <img src="../assests/Destinations/chennai1.jpg" alt="" />
+        <img src="../assests/Destinations/chennai2.jpg" alt="" />
+        <img src="../assests/Destinations/chennai3.jpg" alt="" />
+        <img src="../assests/Destinations/chennai4.jpg" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <!-- RIGHT -->
+    <div class="mustvisit">
+      <div class="mustvisit-info">
+        <a href="./Destinations/varanasi.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Varanasi
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 20px;
+            ">
+          One of the oldest living inhabitations of the world, the sacred city
+          of Varanasi or Benaras, nestled on the banks of the holy Ganges
+          river, has been attracting pilgrims for centuries.
+        </p>
+        <img src="../assests/Destinations/varanasi1.jpg" alt="" />
+        <img src="../assests/Destinations/varanasi2.jpg" alt="" />
+        <img src="../assests/Destinations/varanasi3.jpg" alt="" />
+        <img src="../assests/Destinations/varanasi4.jpg" alt="" />
+      </div>
+      <img src="../assests/Destinations/varanasilogo.jpg" alt="" />
+    </div>
+    <br />
+
+    <div class="mustvisit-next">
+      <img src="../assests/Destinations/BengaluruLogo.jpg" alt="" />
+      <div class="mustvisit-info">
+        <a href="./Destinations/bengaluru.html">
+          <h1 style="
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                font-weight: 300;
+              ">
+            Bengaluru
+          </h1>
+        </a>
+        <p style="
+              font-size: 18px;
+              margin: 5px;
+              font-family: Arial, Helvetica, sans-serif;
+              margin-top: 8px;
+            ">
+          A city catering to almost all the creature comforts of a
+          metropolitan, a pleasant year-round weather and a bustling shopping
+          and culinary scene, Bengaluru, the capital of Karnataka, is the
+          perfect destination to mix work with pleasure.
+        </p>
+        <img src="../assests/Destinations/banglore1.jpg" alt="" />
+        <img src="../assests/Destinations/banglore2.jpg" alt="" />
+        <img src="../assests/Destinations/banglore3.jfif" alt="" />
+        <img src="../assests/Destinations/banglore4.jfif" alt="" />
+      </div>
+    </div>
+  </div>
+  <footer>
+    <section class="foot-sec-1">
+      <section class="foot-states">
+        <section class="foot-heading">
+          <h2>State Tourism Websites</h2>
+        </section>
+        <section class="foot-content">
+          <section class="foot-st-sec-1">
+
+            <a href="https://tourism.ap.gov.in/" target="_blank">Andhra Pradesh</a><br>
+            <a href="https://tourism.bihar.gov.in/" target="_blank">Bihar</a><br>
+            <a href="https://www.gujarattourism.com/" target="_blank">Gujarat</a><br>
+            <a href="https://tourism.jharkhand.gov.in/" target="_blank">Jharkhand</a><br>
+            <a href="https://www.mptourism.com/" target="_blank">Madhya Pradesh</a><br>
+            <a href="https://www.meghalayatourism.in/" target="_blank">Meghalaya</a><br>
+            <a href="https://odishatourism.gov.in/foot-content/tourism/en.html" target="_blank">Odisha</a><br>
+            <a href="https://www.sikkimtourism.gov.in/Public/index" target="_blank">Sikkim</a><br>
+            <a href="https://tripuratourism.gov.in/" target="_blank">Tripura</a><br>
+            <a href="https://wbtourism.gov.in/" target="_blank">West Bengal</a><br>
+          </section>
+
+          <section class="foot-st-sec-2">
+            <a href="https://arunachaltourism.com/" target="_blank">Arunanchal Pradesh</a><br>
+            <a href="https://www.chhattisgarhtourism.in/" target="blank">Chhattisgarh</a><br>
+            <a href="https://haryanatourism.gov.in/" target="_blank">Haryana</a><br>
+            <a href="https://www.karnatakatourism.org/" target="_blank">Karnataka</a><br>
+            <a href="https://www.maharashtratourism.gov.in/" target="_blank">Maharashtra</a><br>
+            <a href="https://tourism.mizoram.gov.in/" target="_blank">Mizoram</a><br>
+            <a href="https://punjabtourism.punjab.gov.in/" target="_blank">Punjab</a><br>
+            <a href="http://www.tamilnadutourism.org/" target="_blank">Tamil Nadu</a><br>
+            <a href="http://www.uptourism.gov.in/" target="_blank">Uttar Pradesh</a><br>
+          </section>
+
+          <section class="foot-st-sec-3">
+            <a href="https://tourism.assam.gov.in/" target="_blank">Assam</a><br>
+            <a href="https://goa-tourism.com/" target="_blank">Goa</a><br>
+            <a href="https://himachaltourism.gov.in/" target="_blank">Himachal Pradesh</a><br>
+            <a href="https://www.keralatourism.org/" target="_blank">Kerala</a><br>
+            <a href="http://www.manipurtourism.gov.in/" target="_blank">Manipur</a><br>
+            <a href="https://tourism.nagaland.gov.in/" target="_blank">Nagaland</a><br>
+            <a href="http://tourism.rajasthan.gov.in/" target="_blank">Rajasthan</a><br>
+            <a href="https://www.telanganatourism.gov.in/" target="_blank">Telangana</a><br>
+            <a href="https://uttarakhandtourism.gov.in/" target="_blank">Uttarakhand</a><br>
+          </section>
+
+        </section>
+      </section>
+
+      <section class="foot-ut-links">
+        <h2>UT Tourism Websites</h2>
+        <a href="https://www.andamantourism.gov.in/" target="_blank">Andaman And Nicobar</a><br>
+        <a href="http://chandigarhtourism.gov.in/" target="_blank">Chandigarh</a><br>
+        <a href="https://www.tourismdddnh.in/" target="_blank">Dadra and Nagar Haveli</a><br>
+        <a href="https://www.tourismdddnh.in/" target="_blank">Daman and Diu</a><br>
+        <a href="https://delhitourism.gov.in/delhitourism/index.jsp" target="_blank">Delhi</a><br>
+        <a href="http://www.jktourism.jk.gov.in/" target="_blank">Jammu and Kashmir</a><br>
+        <a href="http://www.jktourism.jk.gov.in/" target="_blank">Ladakh</a><br>
+        <a href="https://www.lakshadweeptourism.com/" target="_blank">Lakshadweep</a><br>
+        <a href="https://www.pondytourism.in/" target="_blank">Puducherry</a><br>
+      </section>
+
+      <section class="foot-contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>
+            <i class="fa fa-github"></i><span><a href="https://github.com/Yash-1305yg" target="_blank">Yash
+                Gupta</span></a>
+          </li>
+          <li>
+            <i class="fa fa-github"></i><span><a href="https://github.com/YASH-ROCKSTAR" target="_blank">Yash
+                Nigam</span></a>
+          </li>
+          <li>
+            <i class="fa fa-github"></i><span><a href="https://github.com/Yash-1305yg" target="_blank">Rajat
+                Pandey</span></a>
+          </li>
+          <li>
+            <i class="fa fa-github"></i><span><a href="https://github.com/Yash-1305yg" target="_blank">Pawan
+                Pandey</span></a>
+          </li>
+
+        </ul>
+      </section>
+    </section>
+    </section>
+    <hr />
+
+
+    <section class="foot-sec-2">
+      <h2>About Project</h2>
+      <p>Over 1.3 billion people live in India, making it the 2nd most populous country in the world. From the vast
+        deserts of Rajasthan and the blissful beaches of Goa to the vibrant Kerala tea plantations and the busy
+        metropolitan cities of Mumbai and Kolkata, India has huge diversity of landscapes, religion and culture. All of
+        us get confused while choosing a travel destination for vacation so we have created a one stop destination where
+        one can find the best tourist location of every state by browsing photos, videos, and blogs. From sky touching
+        mountains and valleys of Kashmir to beautiful temples of Kanyakumari one can find every location on our website.
+      </p>
+    </section>
+
+    <hr />
+
+    <section class="foot-sec-3">
+      <p>
+        Copyright &copy; 2021 All Rights Reserved by
+        <a href="#">Explore Incredible India</a>
+      </p>
+    </section>
+  </footer>
+</body>
+
 </html>
