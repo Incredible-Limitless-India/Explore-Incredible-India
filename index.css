@@ -48,23 +48,6 @@ nav .nav-items li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-nav .nav-items .submenu{
-    background-image: linear-gradient(to right,#00416A,#99b4ce);
-    position: absolute;
-    width: 195px;
-    left: 0;
-    margin-top: 10px;
-    display: none;
-}
-nav .nav-items .submenu li{
-    margin-bottom: 20px;
-}
-nav .nav-items .submenu li:nth-child(1){
-    margin-top: 5px;
-}
-nav .nav-items li:hover .submenu {
-    display: block;
-}
 nav .nav-items li a::after {
   content: "";
   display: block;
@@ -88,6 +71,7 @@ nav form {
   min-width: 18% !important;
   border-radius: 2px;
   border: 1px solid rgba(155, 155, 155, 0.2);
+  z-index: 1;
 }
 nav form .search-data {
   width: 100%;
