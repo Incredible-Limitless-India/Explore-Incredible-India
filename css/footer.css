@@ -1,6 +1,7 @@
 footer{
     width: 100%;
     background-color: #193498;
+    margin-top: 50px;
   }
   .foot-sec-1
   {
@@ -95,7 +96,7 @@ footer{
     color: white;
     justify-content:space-evenly;
     align-items: center;
-    line-height: 25px;
+    line-height: 25px !important;
     font-size: 16px;
   }
   .foot-sec-3
