@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Incredible India | Statue of Unity</title>
 
     <style>
@@ -65,17 +66,51 @@
 
 <body>
 
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           Explore Incredible! India
+        </div>
+        <div class="nav-items">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Explore</a>
+                   <ul class="submenu">
+                       <li><a href="#">North-India</a></li>
+                       <li><a href="#">South-India</a></li>
+                       <li><a href="#">East-India</a></li>
+                       <li><a href="#">West-India</a></li>
+                   </ul>
+               </li>
+               <li><a href="#">Destination</a></li>
+               <li><a href="#">Signup</a></li>  
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+    <div id="container">
+
+
     <div class="statueContainer">
         <section id="statueBanner">
             <img src="../assests/statueofunity.jpg" alt="Statue of Unity">
         </section>
-        <nav class="statueofunity-breadcrumbs">
+        <div class="statueofunity-breadcrumbs">
             <ol>
-                <li><a href="#">Home / </a></li>
-                <li><a style="color: blue;" href=""> Popular In India / </a></li>
+                <li><a href="../index.html">Home / </a></li>
+                <li><a style="color: blue;" href="../index.html"> Popular In India / </a></li>
                 <li><a style="color: #8b8b8b;" href="#">Statue Of Unity</a></li>
             </ol>
-        </nav>
+        </div>
         <article class="statueInfo">
             <p>It’s huge, almost gigantic! That is the first reaction most people have as they speed down the winding
                 road leading to the towering Statue of Unity (SoU). A long bridge connects the mainland to the Sadhu Bet
