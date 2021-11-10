@@ -320,7 +320,7 @@ nav .logo.space {
     flex-wrap: wrap;
 }
 #popularIndia #cards .innercard {
-    width: 720px;
+    width: 42%;
     height: 300px;
     background-color: powderblue;
     margin: 15px;
