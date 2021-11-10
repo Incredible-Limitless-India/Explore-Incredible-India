@@ -1,0 +1,142 @@
+*{
+  
+}
+
+#Carouselslider {
+    height: 406px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    display: grid ;
+    place-items: center
+    
+  }
+  
+  #slider-container {
+    height: 500px;
+    width: 85vw;
+    max-width: 1400px;
+    background: white;
+    position:absolute;
+    overflow:hidden;
+    padding: 30px;
+    
+    
+  }
+  
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 50px;
+    width: 50px;
+    border-left: 8px solid #90A4AE;
+    border-top: 8px solid #B0BEC5;
+  }
+  
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
+  
+  #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+  }
+  
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+  }
+  
+  #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 15px;
+    box-shadow: 2px 2px 4px 2px lightgrey, 0px 0px 4px 2px lightgrey;
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+  }
+
+  
+  #slider-container #slider .slide span {
+    color: white;
+    font-size: 150px;
+  }
+  
+  @media only screen and (min-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 900px) {
+  
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 550px) {
+  
+    #slider-container #slider .slide {
+      width: calc(10% - 20px);
+    }
+  
+  }
+
+
+
+
+  .slide img{
+      width: 310px;
+      height: 235px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*border-radius: 10px;*/
+      padding: 0px;
+      margin-bottom: 20px;
+     }
+
+  p{
+      width: 300px;
+    text-align:left;
+    font-size: 20px;
+    align-items:baseline;
+    margin-bottom: 40px;
+    overflow:auto;
+    
+  }
+  h3
+  {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  
+#more {
+  display: none;
+}
+
