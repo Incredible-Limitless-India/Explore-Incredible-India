@@ -16,6 +16,10 @@ The nation is one of the most well-liked tourist destinations in the globe becau
 * Khajjiar in Himachal Pradesh. ...
 * Valley of Flowers in Uttarakhand. ...
 * Dal Lake in Srinagar. ...
+* Pahalgam - Jammu & Kashmir
+* Kufri - Himachal Pradesh
+* Ketti Valley - Tamil Nadu
+* Rohtang Pass - Himachal Pradesh
 
 
 <img src="https://i.ibb.co/FqtvCvb/Screenshot-2022-10-02-011047.png" />
