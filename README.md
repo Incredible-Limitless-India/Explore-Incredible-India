@@ -8,7 +8,7 @@ The nation is one of the most well-liked tourist destinations in the globe becau
 # Information about India that you should be aware of before beginning your travel arrangements!
 * The population of India is the second-highest in the world.
 * Varanasi is thought to be one of the oldest continuously inhabited cities in the world.
-* Holi, a celebrated festival, is held throughout India.
+* Holi, Holi is a popular ancient Hindu festival, also known as the Festival of Spring, the Festival of Colours, is held throughout India.
 
 # Beautiful Places to Visit in India
 
